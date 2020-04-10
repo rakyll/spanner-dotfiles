@@ -1,0 +1,7 @@
+alias spanner_emu="gcloud beta emulators spanner start"
+alias spanner_sql="gcloud spanner databases execute-sql"
+
+# Slow queries.
+alias spanner_slow_query_hour="gcloud spanner databases execute-sql --sql='SELECT * FROM SPANNER_SYS.QUERY_STATS_TOP_HOUR'"
+alias spanner_slow_query_min="gcloud spanner databases execute-sql --sql='SELECT * FROM SPANNER_SYS.QUERY_STATS_TOP_MINUTE'"
+alias spanner_slow_query_10min="gcloud spanner databases execute-sql --sql='SELECT * FROM SPANNER_SYS.QUERY_STATS_TOP_10MINUTE'"
